@@ -1,0 +1,25 @@
+name: GoCasa
+version: "1.1.1"
+slug: gocasa
+description: Self-hosted family wall calendar with chores, to-dos, shopping lists and a photo screensaver
+url: https://github.com/DeRusto/goCasa
+arch:
+  - amd64
+  - aarch64
+startup: application
+boot: auto
+# SQLite in /data: stop the add-on while HA backs it up so the copy is consistent.
+backup: cold
+ports:
+  8080/tcp: 8080
+ports_description:
+  8080/tcp: GoCasa web interface
+webui: http://[HOST]:[PORT:8080]
+watchdog: http://[HOST]:[PORT:8080]/healthz
+options:
+  base_url: http://homeassistant.local:8080
+schema:
+  base_url: url
+  google_client_id: str?
+  google_client_secret: password?
+  google_redirect_uri: url?
