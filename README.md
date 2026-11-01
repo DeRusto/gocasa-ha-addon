@@ -7,7 +7,7 @@
 Needs Home Assistant OS or Supervised (add-ons aren't available on Container or Core installs; run GoCasa's Docker image next to Home Assistant instead).
 
 1. Settings → Add-ons → Add-on store → ⋮ → **Repositories**, add `https://github.com/DeRusto/gocasa-ha-addon`.
-2. Install **GoCasa**, set `base_url`, start it, and click **Open Web UI**.
+2. Install **GoCasa**, set `base_url`, start it, and open your `base_url` in a browser.
 
 See [gocasa/DOCS.md](gocasa/DOCS.md) for the options.
 

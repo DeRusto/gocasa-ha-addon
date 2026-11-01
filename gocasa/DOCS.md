@@ -5,7 +5,7 @@ A self-hosted family wall calendar: calendars, chores, to-dos, shopping lists, w
 ## Setup
 
 1. Set **base_url** to the address your tablets and phones type to reach GoCasa, for example `http://homeassistant.local:8080` or `http://192.168.1.10:8080`. It must match exactly: GoCasa refuses form posts from any other address, and uses it for cookies and the `/calendar.ics` link.
-2. Start the add-on and click **Open Web UI**. Add your family under Settings → Members.
+2. Start the add-on and open your `base_url` in a browser. **Open Web UI** opens Home Assistant's own address on port 8080, so use it only if that's the same as `base_url`. Add your family under Settings → Members.
 3. Point a tablet's browser at the same address, and turn on **Wall display** in Settings on that device.
 
 The time zone follows Home Assistant's.
